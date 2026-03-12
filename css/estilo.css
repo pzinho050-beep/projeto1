@@ -1,0 +1,46 @@
+:root{
+    --color-primary: #3498db;
+    --bg-dark: #fafafa;
+    --card-bg: #ffffff;
+    --text-color: #000000;
+    --bnt-color: #fa0606;
+}
+*{
+    margin:0;
+    padding:0; 
+    box-sizing:border-box;
+}
+body{
+    background-color: var(--bg-dark);
+    color:var(--bg-dark);
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 5%;
+    background: rgba(0, 0, 0, 0.5);
+    top:0;
+}
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+.logo span{
+    color:var(--bnt-color);
+}
+nav ul{
+    display:flex;
+    list-style:none;
+}
+nav ul li{
+    margin:0 15px;
+}
+nav ul li a{
+    color:var(--text-color);
+    text-decoration:none;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color:var(--bnt-color);
+}
